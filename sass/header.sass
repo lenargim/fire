@@ -1,0 +1,47 @@
+.header
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    right: 0
+    top: 64px
+    width: 100vw
+    height: 1px
+    background: $neutralWeak
+    z-index: -1
+  &__wrap
+    display: grid
+    grid-template-columns: 140px 1fr
+    grid-gap: 52px
+  &__logo
+    width: 140px
+  &__top
+    padding: 20px 0
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  &__address
+    margin-right: auto
+    color: $baseStrongLight
+    letter-spacing: 0.16px
+  &__phone
+    color: $baseStrong
+    font: $font16Bold
+  &__mail
+    color: $accentStrong
+    margin-left: 40px
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 90px
+    padding: 16px 0
+  &__nav
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 40px
+  &__link
+    white-space: nowrap
+    font: $font16Bold
+    color: $baseStrong

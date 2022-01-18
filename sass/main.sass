@@ -1,0 +1,145 @@
+*
+  box-sizing: border-box
+  outline: none
+
+html
+  overflow-x: hidden
+
+body, input, textarea, table, button
+  font-family: $graphik
+
+body
+  font-size: 14px
+  line-height: 1.57
+  font-weight: 400
+  margin: 0
+  width: 100%
+  padding: 0
+  overflow-x: hidden
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  min-width: 320px
+  min-height: 100vh
+  position: relative
+  color: $baseStrong
+
+html
+  height: 100%
+
+header,
+footer,
+section,
+main
+  position: relative
+
+.container
+  width: 100%
+  padding: 0 10px
+  margin: 0 auto
+  max-width: 1300px
+
+input[type=search]::-ms-clear
+  display: none
+  width: 0
+  height: 0
+
+input[type=search]::-ms-reveal
+  display: none
+  width: 0
+  height: 0
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+  display: none
+
+ul, nav
+  list-style-type: none
+
+a
+  text-decoration: none
+
+h1, h2, h3, p, ul
+  margin: 0
+  padding: 0
+  font-weight: 400
+
+.button
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  white-space: nowrap
+  transition: all 0.3s ease
+  border-radius: 8px
+  background: $accentStrong
+  color: $baseWeak
+  padding: 9px 20px
+.button-white
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  border: 1px solid $neutralWeakDark
+  padding: 9px 20px
+  color: $neutralStrongDark
+  border-radius: 8px
+  letter-spacing: 0.16px
+  &::after
+    content: ''
+    width: 16px
+    height: 16px
+    background: url("../img/arrow-right.svg") no-repeat
+    background-position: center center
+    margin-left: 8px
+
+h1
+  font: 600 60px/64px "RF Dewi", sans-serif
+
+h2
+  font: 600 40px/1.1 $rf
+
+.img
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+
+  img, picture
+    width: 100%
+    height: 100%
+    display: block
+    object-fit: cover
+
+input, textarea
+  outline: none
+
+button
+  border: none
+
+address
+  font-style: normal
+.desktop
+  @include max(1023)
+    display: none !important
+.mobile
+  @include min(1024)
+    display: none !important
+.nowrap
+  white-space: nowrap
+.hidden
+  display: none
+.policy
+  cursor: pointer
+.relative
+  position: relative
+.before
+  font: 12px/20px $graphik
+  padding-bottom: 12px
+  border-bottom: 1px solid $neutralWeak
+  margin-bottom: 64px
+
+footer
+  height: 400px

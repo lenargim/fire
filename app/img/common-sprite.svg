@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="arrow-right" viewBox="0 0 16 16">
+        <path d="M6.5 4L9.5 8L6.5 12" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+</svg>

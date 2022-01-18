@@ -1,0 +1,32 @@
+.navigation
+  position: absolute
+  width: 120px
+  height: 40px
+  display: flex
+  align-items: stretch
+  justify-content: space-between
+  right: 0
+  bottom: 0
+.swiper-button
+  width: 56px
+  height: 100%
+  border-radius: 8px
+  background-color: $neutralWeakLight
+  position: relative
+  z-index: 1
+  left: unset
+  right: unset
+  &.swiper-button-disabled
+    opacity: 1
+    svg
+      stroke: $neutralWeakDark
+  svg
+    width: 16px
+    height: 16px
+    stroke: $accentStrong
+    fill: transparent
+  &::after
+    content: none
+  &-prev
+    svg
+      transform: rotate(180deg)

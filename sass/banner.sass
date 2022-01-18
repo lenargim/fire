@@ -1,0 +1,53 @@
+.banner
+  background: linear-gradient(67.69deg, #184983 21.22%, rgba(24, 73, 131, 0) 50.22%), url("../img/banner.jpg") no-repeat
+  background-size: cover
+  color: $baseWeak
+  &__wrap
+    height: calc(100vh - 137px)
+    padding: 80px 0
+    position: relative
+    display: flex
+    align-items: stretch
+    justify-content: space-between
+    gap: 10px
+  &__before
+    letter-spacing: 0.16px
+    color: $accentWeak
+    position: relative
+    display: inline-block
+    margin-bottom: 53px
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      height: 1px
+      background: rgba(255, 255, 255, 0.12)
+      bottom: -12px
+  h1
+    padding-bottom: 50px
+  &__button
+    position: absolute
+    left: 0
+    bottom: 80px
+  &__aside
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    width: 302px
+    gap: 20px
+  &__box
+    border-radius: 12px
+    padding: 79px 32px 32px
+    &-number
+      font-size: 44px
+      line-height: 44px
+      padding-bottom: 16px
+      border-bottom: 1px solid $accentStrongLight
+    &-text
+      padding-top: 16px
+      font: $font16
+    &:first-of-type
+      background: $accentStrong
+    &:nth-of-type(2)
+      background: $accentStrongDark
