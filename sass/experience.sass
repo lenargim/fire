@@ -1,0 +1,68 @@
+.experience
+  margin-bottom: -350px
+  z-index: 1
+  &__wrap
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 24px
+    padding: 40px
+    border-radius: 12px
+    background: linear-gradient(0deg, #F4F5F6, #F4F5F6)
+    h2
+      margin-bottom: 60px
+  &__rightside
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto
+    grid-gap: 24px
+  &__box
+    border-radius: 12px
+    padding: 32px
+    color: $baseWeak
+    &-slide
+      display: block
+      width: 52px
+      border-radius: 12px
+      padding: 16px
+      letter-spacing: 0.24px
+      margin-left: auto
+      font: $font12
+    &-desc
+      font: $font16
+    &:first-of-type
+      background-color: $baseWeak
+      grid-column: 1/-1
+      padding: 64px
+      .experience__box
+        &-slide
+          border: 1px solid #DDE1E7
+          color: $baseStrongLight
+          margin-bottom: 24px
+        &-title
+          font: 600 132px/140px $rf
+          color: $accentStrongDark
+          white-space: nowrap
+          border-bottom: 1px solid$neutralWeak
+        &-unit
+          font-size: 24px
+          line-height: 140px
+        &-desc
+          padding-top: 44px
+          max-width: 238px
+          color: $baseStrongLight
+    &:nth-of-type(2), &:nth-of-type(3)
+      .experience__box
+        &-slide
+          border: 1px solid $accentWeakDark
+          margin-bottom: 65px
+        &-title
+          font-size: 44px
+          line-height: 1
+          padding-bottom: 16px
+          border-bottom: 1px solid $accentWeakDark
+        &-desc
+          padding-top: 16px
+    &:nth-of-type(2)
+      background-color: $accentStrongDark
+    &:nth-of-type(3)
+      background-color: $accentStrongLight

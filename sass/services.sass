@@ -21,9 +21,14 @@
       letter-spacing: 0.16px
       white-space: nowrap
       padding: 16px 0
+      transition: color 0.3s ease
+      &:hover
+        color: $accentStrong
       &.active
         color: $accentStrong
         border-bottom: 2px solid $accentStrong
+  &__slider
+    position: relative
   &__box
     display: none
     &:first-of-type
@@ -36,8 +41,7 @@
     position: relative
     transition: background-color 0.3s ease
     &-title
-      font-size: 20px
-      line-height: 24px
+      font: $font24Bold
       transition: background-color 0.3s ease
       color: $baseStrong
     &-arrow
@@ -59,8 +63,7 @@
         transition: stoke 0.3s ease
     span
       color: $neutralStrongLight
-      font-size: 12px
-      line-height: 20px
+      font: $font12
       position: absolute
       left: 40px
       bottom: 40px

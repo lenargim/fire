@@ -1,0 +1,92 @@
+.footer
+  background-color: $neutralStrongDark
+  padding-top: 40px
+  color: $baseWeak
+  .to-top
+    width: 100%
+    letter-spacing: 0.16px
+    border: 1px solid $neutralStrong
+    border-radius: 8px
+    text-align: center
+    padding: 9px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    margin-bottom: 80px
+    svg
+      width: 16px
+      height: 16px
+      transform: rotate(-90deg)
+      fill: transparent
+      stroke: $accentStrongLight
+      margin-left: 12px
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-template-rows: auto
+    grid-gap: 60px 24px
+    padding-bottom: 120px
+  &__box
+    font-size: 14px
+    line-height: 18px
+    letter-spacing: 0.16px
+    padding-right: 60px
+  &__subtitle
+    font-weight: 600
+    a
+      color: $baseWeak
+      margin-bottom: 24px
+      display: block
+  &__nav
+    padding-top: 24px
+    li
+      padding-bottom: 12px
+      a
+        color: $neutralWeakDark
+  .before
+    color: $neutralStrongLight
+    border-color: $neutralStrongLight
+  &__contacts
+    padding-bottom: 80px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    a
+      letter-spacing: 0.16px
+      color: $baseWeak
+  &__mail
+    display: block
+    text-decoration-line: underline
+    padding-bottom: 20px
+    line-height: 18px
+  &__phone
+    display: block
+    font: 600 32px/36px $rf
+    padding-bottom: 20px
+  &__address
+    max-width: 278px
+  &__socials
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    gap: 8px
+  .social
+    width: 56px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid $neutralStrong
+    border-radius: 8px
+    line-height: 1
+    svg
+      width: 16px
+      height: 16px
+  &__bottom
+    border-top: 1px solid $neutralStrong
+    padding: 32px 0
+    &-text
+      display: flex
+      align-items: center
+      justify-content: space-between

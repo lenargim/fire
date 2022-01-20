@@ -56,8 +56,13 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration
   display: none
 
-ul, nav
+nav
   list-style-type: none
+ul li
+  color: $baseStrongLight
+  font: $font16
+  padding: 0 0 0.5em 0.5em
+  list-style-position: inside
 
 a
   text-decoration: none
@@ -73,12 +78,22 @@ h1, h2, h3, p, ul
   align-items: center
   cursor: pointer
   white-space: nowrap
-  transition: all 0.3s ease
   border-radius: 8px
   background: $accentStrong
   color: $baseWeak
   padding: 9px 20px
-.button-white
+  border: none
+  transition: all 0.3s ease
+  font-size: 14px
+  line-height: 22px
+  &:hover
+    background: $accentStrongLight
+  &:active
+    background: $accentStrongDark
+  &:disabled
+    background: $accentWeakLight
+    color: $accentWeak
+.button-gray
   display: inline-flex
   align-items: center
   justify-content: center
@@ -87,13 +102,18 @@ h1, h2, h3, p, ul
   color: $neutralStrongDark
   border-radius: 8px
   letter-spacing: 0.16px
-  &::after
-    content: ''
+  transition: all 0.3s ease
+  svg
     width: 16px
     height: 16px
-    background: url("../img/arrow-right.svg") no-repeat
-    background-position: center center
+    stroke: $accentStrong
+    fill: transparent
     margin-left: 8px
+  &:hover
+    color: $accentStrong
+  &:active
+    color: $accentStrong
+    border-color: $accentStrong
 
 h1
   font: 600 60px/64px "RF Dewi", sans-serif
@@ -115,12 +135,44 @@ h2
 
 input, textarea
   outline: none
+  padding: 12px 16px
+  color: $baseStrong
+  font: $font16
+  background-color: $baseWeak
+  border-radius: 4px
+  width: 100%
+  border: 1px solid $neutralWeakDark
+  &::placeholder
+    color: $neutralWeakDark
+  &:focus
+    border-color: $accentStrongLight
+label
+  display: inline-block
+  letter-spacing: 0.16px
+  padding-bottom: 4px
+  &.required:after
+    content: '*'
+    color: $criticalStrong
+    letter-spacing: 0.16px
+    padding-left: 4px
+
+textarea
+  resize: none
 
 button
   border: none
 
 address
   font-style: normal
+a
+  color: $baseStrong
+  letter-spacing: 0.16px
+  &:hover, &:focus
+    color: $accentStrong
+  &:active
+    color: $accentStrongLight
+  &:disabled
+    color: $neutralStrongLight
 .desktop
   @include max(1023)
     display: none !important
@@ -139,7 +191,5 @@ address
   font: 12px/20px $graphik
   padding-bottom: 12px
   border-bottom: 1px solid $neutralWeak
+  color: $baseStrongLight
   margin-bottom: 64px
-
-footer
-  height: 400px
