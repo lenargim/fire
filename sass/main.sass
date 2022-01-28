@@ -32,7 +32,8 @@ footer,
 section,
 main
   position: relative
-
+main
+  margin-top: 80px
 .container
   width: 100%
   padding: 0 10px
@@ -63,6 +64,36 @@ ul li
   font: $font16
   padding: 0 0 0.5em 0.5em
   list-style-position: inside
+ol
+  padding: 0
+  li
+    padding: 16px 0
+    border-bottom: 1px solid $neutralWeak
+    counter-increment: my-counter
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    gap: 20px
+    letter-spacing: 0.16px
+    position: relative
+
+    &:last-of-type
+      border: none
+
+    &::before
+      font-size: 8px
+      line-height: 12px
+      font-weight: 600
+      letter-spacing: 0.24px
+      width: 24px
+      height: 24px
+      display: flex
+      align-items: center
+      justify-content: center
+      content: '0' counter(my-counter)
+      background-color: $accentStrong
+      color: $baseWeak
+      border-radius: 50%
 
 a
   text-decoration: none
@@ -114,6 +145,24 @@ h1, h2, h3, p, ul
   &:active
     color: $accentStrong
     border-color: $accentStrong
+.button-white
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: 9px
+  width: 100%
+  letter-spacing: 0.16px
+  color: $baseStrong
+  transition: all 0.3s ease
+  background-color: $baseWeak
+  border-radius: 8px
+  cursor: pointer
+  &:hover
+    color: $accentStrong
+    background-color: $neutralWeak
+  &:active
+    background-color: $baseWeak
+    color: $accentStrong
 
 h1
   font: 600 60px/64px "RF Dewi", sans-serif

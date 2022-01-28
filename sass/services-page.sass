@@ -1,0 +1,190 @@
+.services-page
+  &__box
+    display: grid
+    grid-gap: 24px
+    grid-template-columns: 1fr 1fr
+    padding-bottom: 80px
+    border-bottom: 1px solid $neutralWeak
+
+    &:last-of-type
+      border: none
+      padding-bottom: 0
+
+  &__title
+    font: 600 40px/44px $rf
+
+  &__content
+    svg
+      width: 16px
+      height: 16px
+      fill: transparent
+      stroke: $baseStrong
+      margin-left: auto
+      position: absolute
+      right: 0
+      transition: stroke 0.3s ease
+
+    li
+      padding: 20px 0
+      border-bottom: 1px solid $neutralWeak
+      counter-increment: my-counter
+      display: flex
+      align-items: center
+      justify-content: flex-start
+      gap: 16px
+      letter-spacing: 0.16px
+      position: relative
+
+      &:last-of-type
+        border: none
+
+      &::before
+        font-size: 8px
+        line-height: 12px
+        font-weight: 600
+        letter-spacing: 0.24px
+        width: 24px
+        height: 24px
+        display: flex
+        align-items: center
+        justify-content: center
+        content: '0' counter(my-counter)
+        background-color: $accentWeakLight
+        color: $accentStrong
+        border-radius: 50%
+
+    li:hover svg
+      stroke: $accentStrong
+.service-page
+  &__box
+    display: grid
+    grid-gap: 24px
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto
+    padding-bottom: 120px
+  &__callback
+    background-color: $accentStrong
+    border-radius: 12px
+    padding: 32px
+    color: $baseWeak
+    max-width: 572px
+    grid-row: 1/2
+    &-title
+      font: $font16
+      padding-bottom: 1em
+      border-bottom: 1px solid $accentStrongLight
+    &-price
+      font: $font16
+      padding-top: 1em
+      .price
+        font-size: 44px
+        line-height: 1
+        padding: 16px 0 20px
+  &__text
+    grid-row: 1/3
+    &-subtitle
+      font-size: 24px
+      line-height: 28px
+      padding-bottom: 1em
+  &__part
+    padding-bottom: 48px
+    &:last-of-type
+      padding: 0
+  ul li
+    padding-left: 0
+  p
+    color: $baseStrongLight
+  .price-block
+    border-radius: 12px
+    border: 1px solid $neutralWeak
+    padding: 80px
+    &__title
+      font: $font24Bold
+      padding-bottom: 1em
+    table
+      width: 100%
+      font-size: 14px
+      border-collapse: collapse
+      th
+        text-align: left
+        padding: 16px 0
+        border-bottom: 2px solid $accentStrong
+        gap: 5px
+        &:last-of-type
+          text-align: right
+          padding-right: 10px
+        .sortButton
+          letter-spacing: 0.16px
+          cursor: pointer
+          color: $baseStrong
+          font-size: 14px
+          line-height: 18px
+          background-color: transparent
+          font-weight: 600
+          padding: 0
+          &:after
+            content: ''
+            border-left: 2px solid $neutralWeak
+            border-top: 2px solid $neutralWeak
+            width: 7px
+            height: 7px
+            display: inline-block
+            border-radius: 1px
+            transform: rotate(-135deg)
+            position: relative
+            left: 10px
+        & .sortButton[value="1"]:after
+          border-left: 2px solid $accentStrong
+          border-top: 2px solid $accentStrong
+          transform: rotate(45deg)
+      td
+        line-height: 22px
+        padding: 16px 0
+        border-bottom: 1px solid $neutralWeak
+        letter-spacing: 0.16px
+        &.price
+          text-align: right
+          color: $baseStrongLight
+          &:after
+            content: ' ₽'
+      tbody tr:last-of-type td
+        border: none
+.service
+  padding-top: 120px
+  &__title
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 24px
+    padding-bottom: 60px
+    span
+      color: $baseStrongLight
+  &__wrap
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 24px
+  &__box
+    border-radius: 12px
+    padding: 40px
+    color: $baseWeak
+    &-title
+      font-size: 20px
+      line-height: 24px
+      padding-bottom: 1em
+      margin-bottom: 1em
+      border-bottom: 1px solid $overlayWeak
+      font-weight: 600
+    &:nth-of-type(1)
+      background-color: $accentStrong
+    &:nth-of-type(2)
+      background-color: $accentStrongDarkest
+    &:nth-of-type(3)
+      background-color: $accentWeakLight
+      color: $neutralStrong
+      .service__box-title
+        color: $baseStrong
+        border-color: $overlayStrong
+  &__ask
+    margin: 120px 0
+    padding: 64px
+    border-radius: 12px
+    background-color: $neutralWeakLight
