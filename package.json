@@ -13,5 +13,8 @@
     "gulp-uglify-es": "^3.0.0",
     "node-bourbon": "^4.2.8",
     "sass": "^1.45.1"
+  },
+  "dependencies": {
+    "magnific-popup": "^1.1.0"
   }
 }

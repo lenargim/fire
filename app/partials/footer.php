@@ -116,6 +116,82 @@
     </div>
   </div>
 </footer>
+<div class="overlay">
+  <div class="modal modal-question">
+    <div class="modal__close"></div>
+    <div class="modal__wrap">
+      <div class="before">Нужна помощь?</div>
+      <div class="ask__title">
+        <h2>Задать вопрос<br>специалисту</h2>
+        <span>Оставьте свои контактные данные<br>и мы свяжемся с вами, чтобы ответить<br>на любые вопросы</span>
+      </div>
+      <form action="" class="ask__form" id="modal-question">
+        <div class="input-row">
+          <label for="modal-question-name" class="required">Имя</label>
+          <input type="text" id="modal-question-name" placeholder="Примеров Пример">
+          <span class="hint-text">Текст подсказки</span>
+        </div>
+        <div class="input-row">
+          <label for="modal-question-phone" class="required">Телефон</label>
+          <input type="tel" id="modal-question-phone" placeholder="+7 (___) ___-__-__">
+          <span class="hint-text">Текст подсказки</span>
+        </div>
+        <div class="input-row">
+          <label for="modal-question-firm" class="required">Название организации</label>
+          <input type="text" id="modal-question-firm" placeholder="ООО «Пример»">
+          <span class="hint-text">Текст подсказки</span>
+        </div>
+        <div class="input-row">
+          <label for="modal-question-textarea">Ваш вопрос</label>
+          <textarea name="" id="modal-question-textarea" rows="8"
+                    placeholder="Например — какие документы для осуществления вашей деятельноси у вас имeются?"></textarea>
+          <span class="hint-text">Текст подсказки</span>
+        </div>
+        <div class="button-row">
+          <button class="button submit" type="submit">Отправить вопрос</button>
+          <span>Нажимая на кнопку «Отправить вопрос», я соглашаюсь с условиями обработки и использования персональных данных</span>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="modal modal-checkout">
+    <div class="modal__close"></div>
+    <div class="modal__wrap">
+      <div class="before">Готовы сотрудничать?</div>
+      <div class="ask__title">
+        <h2>Оформление<br>заказа</h2>
+        <span>Оставьте свои контактные данные<br>и мы свяжемся с вами, чтобы ответить<br>на любые вопросы</span>
+      </div>
+      <form action="" class="ask__form" id="modal-checkout">
+        <div class="input-row">
+          <label for="modal-checkout-name" class="required">Имя</label>
+          <input type="text" id="modal-checkout-name" placeholder="Примеров Пример">
+          <span class="hint-text">Текст подсказки</span>
+        </div>
+        <div class="input-row">
+          <label for="modal-checkout-phone" class="required">Телефон</label>
+          <input type="tel" id="modal-checkout-phone" placeholder="+7 (___) ___-__-__">
+          <span class="hint-text">Текст подсказки</span>
+        </div>
+        <div class="input-row">
+          <label for="modal-checkout-firm" class="required">Название организации</label>
+          <input type="text" id="modal-checkout-firm" placeholder="ООО «Пример»">
+          <span class="hint-text">Текст подсказки</span>
+        </div>
+        <div class="input-row">
+          <label for="modal-checkout-textarea">Комментарий к заказу</label>
+          <textarea name="" id="modal-checkout-textarea" rows="8"
+                    placeholder="Например — свяжитесь со мной в рабочее время с 9 до 18 по мск. времени"></textarea>
+          <span class="hint-text">Текст подсказки</span>
+        </div>
+        <div class="button-row">
+          <button class="button submit" type="submit">Оформить заявку</button>
+          <span>Нажимая на кнопку «Оформить заявку», я соглашаюсь с условиями обработки и использования персональных данных</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 <script src="js/scripts.js"></script>
 </body>

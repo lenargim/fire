@@ -1,0 +1,101 @@
+.info
+  &__wrap
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: 60px
+  &__box
+    padding-bottom: 60px
+    border-bottom: 1px solid $neutralWeak
+    display: grid
+    grid-template-columns: 2fr 4fr 5fr
+    grid-gap: 24px
+    &:last-of-type
+      border: none
+    &:hover
+      .info__title
+        color: $accentStrong
+      svg
+        background: $accentStrong
+        stroke: $baseWeak
+  &__img
+    margin: 0 auto 0 24px
+    img
+      border-radius: 12px
+      max-width: 270px
+      max-height: 200px
+  &__date
+    color: $baseStrongLight
+    font: $font16
+  &__day
+    font: 600 60px/64px $rf
+    padding-bottom: 12px
+    color: $accentStrongDark
+  &__title
+    font: $font24Bold
+    color: $baseStrong
+    transition: color 0.3s ease
+    svg
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      padding: 12px
+      fill: transparent
+      stroke: $accentStrong
+      display: block
+      background-color: $accentWeakLight
+      transition: all 0.3s ease
+    span
+      display: inline-block
+      padding-bottom: 24px
+.article-page
+  margin-top: 0
+  h1
+    font: 600 40px/44px $rf
+    padding-bottom: 1em
+    border-bottom: 1px solid $neutralWeak
+.article
+  &__wrap
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 24px
+  &__side
+    display: grid
+    grid-template-columns: 1fr
+    grid-gap: 40px
+  &__leftside
+    grid-row: 1/2
+  &__socials
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    gap: 8px
+    .social
+      width: 56px
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 1px solid $neutralWeakDark
+      border-radius: 8px
+      line-height: 1
+      svg
+        width: 16px
+        height: 16px
+        fill: $accentStrong
+  &__rightside
+    grid-row: 1/3
+    p
+      color: $baseStrongLight
+      font: $font16
+  &__subtitle
+    font: $font16Bold
+    padding-bottom: 1em
+  &__title
+    font: $font24Bold
+    padding-bottom: 1em
+  &__img
+    border-radius: 12px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%

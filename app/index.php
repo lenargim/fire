@@ -42,90 +42,80 @@ include('partials/header.php'); ?>
           <div class="services__box">
             <div class="services__slider active">
               <div class="swiper-wrapper">
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование систем пожарной сигнализации</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы освещения<br>и управления эвакуацией</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы внутреннего пожарного водопровода</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы автоматического пожаротушения</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы охранной сигнализации</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование систем пожарной сигнализации</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы освещения<br>и управления эвакуацией</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы внутреннего пожарного водопровода</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы автоматического пожаротушения</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы охранной сигнализации</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
@@ -151,45 +141,40 @@ include('partials/header.php'); ?>
           <div class="services__box">
             <div class="services__slider">
               <div class="swiper-wrapper">
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование систем пожарной сигнализации</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы освещения и управления эвакуацией</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы внутреннего пожарного водопровода</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы автоматического пожаротушения</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы охранной сигнализации</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
@@ -214,45 +199,40 @@ include('partials/header.php'); ?>
           <div class="services__box">
             <div class="services__slider">
               <div class="swiper-wrapper">
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">1</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">2</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">3</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">4</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">5</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
@@ -277,36 +257,32 @@ include('partials/header.php'); ?>
           <div class="services__box">
             <div class="services__slider">
               <div class="swiper-wrapper">
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">1</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">2</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">3</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">4</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
@@ -331,45 +307,40 @@ include('partials/header.php'); ?>
           <div class="services__box">
             <div class="services__slider">
               <div class="swiper-wrapper">
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">Проектирование системы внутреннего</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">...</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">???</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
@@ -394,45 +365,40 @@ include('partials/header.php'); ?>
           <div class="services__box">
             <div class="services__slider">
               <div class="swiper-wrapper">
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">1</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">2</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">3</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">4</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">5</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
@@ -457,45 +423,40 @@ include('partials/header.php'); ?>
           <div class="services__box">
             <div class="services__slider">
               <div class="swiper-wrapper">
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">1</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">2</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">3</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">4</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
                     </svg>
                   </div>
                 </a>
-                <a href="#" class="services__item swiper-slide">
+                <a href="service.php" class="services__item swiper-slide">
                   <div class="services__item-title">5</div>
-                  <span></span>
                   <div class="services__item-arrow">
                     <svg>
                       <use xlink:href="img/index.svg#arrow-right-up"></use>
@@ -569,7 +530,7 @@ include('partials/header.php'); ?>
         <h2>Выполненные проекты</h2>
         <div class="portfolio__slider">
           <div class="swiper-wrapper">
-            <a href="#" class="swiper-slide portfolio__slide">
+            <a href="case.php" class="swiper-slide portfolio__slide">
               <div class="portfolio__box">
                 <div class="portfolio__text">
                   <div class="portfolio__title">Фудмаркет в ТРЦ «Гринвич», Екатеринбург, ул. 8 марта 46</div>
@@ -579,9 +540,8 @@ include('partials/header.php'); ?>
                 </div>
                 <img src="img/portfolio-slider1.jpg" alt="Фудмаркет в ТРЦ «Гринвич», Екатеринбург, ул. 8 марта 46"
                      class="portfolio__img"></div>
-              <div class="portfolio__counter"></div>
             </a>
-            <a href="#" class="swiper-slide portfolio__slide">
+            <a href="case.php" class="swiper-slide portfolio__slide">
               <div class="portfolio__box">
                 <div class="portfolio__text">
                   <div class="portfolio__title">Фудмаркет в ТРЦ «Гринвич», Екатеринбург, ул. 8 марта 46</div>
@@ -592,9 +552,8 @@ include('partials/header.php'); ?>
                 </div>
                 <img src="img/portfolio-slider2.jpg" alt="Фудмаркет в ТРЦ «Гринвич», Екатеринбург, ул. 8 марта 46"
                      class="portfolio__img"></div>
-              <div class="portfolio__counter"></div>
             </a>
-            <a href="#" class="swiper-slide portfolio__slide">
+            <a href="case.php" class="swiper-slide portfolio__slide">
               <div class="portfolio__box">
                 <div class="portfolio__text">
                   <div class="portfolio__title">Фудмаркет в ТРЦ «Гринвич», Екатеринбург, ул. 8 марта 46</div>
@@ -604,7 +563,6 @@ include('partials/header.php'); ?>
                 </div>
                 <img src="img/portfolio-slider2.jpg" alt="Фудмаркет в ТРЦ «Гринвич», Екатеринбург, ул. 8 марта 46"
                      class="portfolio__img"></div>
-              <div class="portfolio__counter"></div>
             </a>
           </div>
           <div class="navigation">
@@ -778,15 +736,18 @@ include('partials/header.php'); ?>
               <div class="input-row">
                 <label for="ask-name" class="required">Имя</label>
                 <input type="text" id="ask-name" placeholder="Примеров Пример">
+                <span class="hint-text">Текст подсказки</span>
               </div>
               <div class="input-row">
                 <label for="ask-phone" class="required">Телефон</label>
                 <input type="tel" id="ask-phone" placeholder="+7 (___) ___-__-__">
+                <span class="hint-text">Текст подсказки</span>
               </div>
               <div class="input-row">
                 <label for="ask-textarea">Ваш вопрос</label>
                 <textarea name="" id="ask-textarea" rows="10"
                           placeholder="Например — какие документы для осуществления вашей деятельноси у вас имeются?"></textarea>
+                <span class="hint-text">Текст подсказки</span>
               </div>
               <div class="button-row">
                 <button class="button submit" type="submit">Отправить вопрос</button>

@@ -26,7 +26,7 @@ include('partials/header.php'); ?>
             <span>от</span>
             <div class="price">2 500 ₽</div>
           </div>
-          <div class="service-page__callback-button button-white">Отправить заявку</div>
+          <div class="service-page__callback-button button-white open-modal-checkout">Отправить заявку</div>
         </div>
         <div class="service-page__text">
           <div class="service-page__part">
@@ -105,12 +105,12 @@ include('partials/header.php'); ?>
             <div class="before">Поможем с выбором</div>
             <h2>Узнайте, какая система пожарной сигнализации подходит именно вам</h2>
             <div class="sertificate__text">Бесплатно отправим инженера на объект<br>для осмотра и оценки</div>
-            <a href="#" class="button-gray sertificate__link">
+            <div class="button-gray sertificate__link open-modal-question">
               <span>Узнать стоимость</span>
               <svg>
                 <use xlink:href="img/common-sprite.svg#arrow-right"></use>
               </svg>
-            </a>
+            </div>
           </div>
           <div class="sertificate__rightside">
             <img src="img/help.png" alt="fire">
@@ -248,15 +248,18 @@ include('partials/header.php'); ?>
           <div class="input-row">
             <label for="ask-name" class="required">Имя</label>
             <input type="text" id="ask-name" placeholder="Примеров Пример">
+            <span class="hint-text">Текст подсказки</span>
           </div>
           <div class="input-row">
             <label for="ask-phone" class="required">Телефон</label>
             <input type="tel" id="ask-phone" placeholder="+7 (___) ___-__-__">
+            <span class="hint-text">Текст подсказки</span>
           </div>
           <div class="input-row">
             <label for="ask-textarea">Комментарий</label>
             <textarea name="" id="ask-textarea" rows="10"
                       placeholder="Например — свяжитесь со мной в рабочее время с 9 до 18 по мск. времени"></textarea>
+            <span class="hint-text">Текст подсказки</span>
           </div>
           <div class="button-row">
             <button class="button submit" type="submit">Оставить заявку</button>

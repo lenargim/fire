@@ -47,7 +47,7 @@ gulp.task('code', function() {
 });
 
 gulp.task('watch', function () {
-	gulp.watch('sass/**/*.sass', gulp.parallel('styles'));
+	gulp.watch('sass/**/*.*', gulp.parallel('styles'));
 	gulp.watch(['app/js/js.js', 'app/libs/**/*.js'], gulp.parallel('scripts'));
 	gulp.watch('app/*.html', gulp.parallel('code'));
 	gulp.watch('app/*.php', gulp.parallel('code'));

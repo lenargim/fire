@@ -21,16 +21,6 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    on: {
-      init: function () {
-        let slides = this.slides;
-        slides.each(function (index, el) {
-          let number;
-          el > 8 ? number = ++el : number = `0${++el}`;
-          $(this).find('.portfolio__counter').text(number)
-        })
-      },
-    },
   });
 
   let clients = new Swiper('.clients__slider', {
@@ -68,6 +58,68 @@ $(document).ready(function () {
 
   $('a.disabled').on('click', function (e) {
     e.preventDefault();
+  });
+
+  let caseSlider = new Swiper('.case-page__slider', {
+    slidesPerView: 1,
+    watchSlidesProgress: true,
+    spaceBetween: 50,
+    preloadImages: false,
+    allowTouchMove: false,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'custom',
+      clickable: true,
+      currentClass: 'active',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+  caseSlider.on('slideChange', function () {
+    let pagItem = $('.case-page__pagination-item');
+    pagItem.removeClass('active');
+    pagItem.eq(caseSlider.activeIndex).addClass('active')
+  });
+
+
+  $('.case-page__img').magnificPopup({
+    type: 'image',
+    tClose: 'Закрыть',
+    tLoading: 'Загрузка...',
+    gallery: {
+      enabled: true,
+      preload: [0, 1],
+      navigateByImgClick: true,
+      tPrev: 'Назад', // title for left button
+      tNext: 'Вперед', // title for right button
+    },
+    image: {
+      markup: '<div class="mfp-figure">' +
+        '<div class="mfp-close"></div>' +
+        '<div class="mfp-img"></div>' +
+        '<div class="mfp-title"></div>' +
+        '</div>',
+      titleSrc: function (item) {
+        return item.el.attr('title');
+      },
+    },
+  });
+
+  $('.modal__close').on('click', function () {
+    $('.modal').removeClass('active');
+    $('.overlay').removeClass('active');
+  })
+
+  $('.open-modal-checkout').on('click', function () {
+    $('.modal-checkout').addClass('active');
+    $('.overlay').addClass('active');
+  })
+
+  $('.open-modal-question').on('click', function () {
+    $('.modal-question').addClass('active');
+    $('.overlay').addClass('active');
   })
 });
 
@@ -157,16 +209,6 @@ function getSlider() {
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
-    },
-    on: {
-      init: function () {
-        let slides = this.slides;
-        slides.each(function (index, el) {
-          let number;
-          el > 8 ? number = ++el : number = `0${++el}`;
-          $(this).find('span').text(number)
-        })
-      },
     },
   });
 }

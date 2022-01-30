@@ -102,7 +102,62 @@ h1, h2, h3, p, ul
   margin: 0
   padding: 0
   font-weight: 400
-
+table
+  width: 100%
+  font-size: 14px
+  border-collapse: collapse
+  th
+    text-align: left
+    padding: 16px 0
+    border-bottom: 2px solid $accentStrong
+    gap: 5px
+    &:last-of-type
+      text-align: right
+      padding-right: 10px
+    .sortButton
+      letter-spacing: 0.16px
+      cursor: pointer
+      color: $baseStrong
+      font-size: 14px
+      line-height: 18px
+      background-color: transparent
+      font-weight: 600
+      padding: 0
+      &:after
+        content: ''
+        border-left: 2px solid $neutralWeak
+        border-top: 2px solid $neutralWeak
+        width: 7px
+        height: 7px
+        display: inline-block
+        border-radius: 2px
+        transform: rotate(-135deg)
+        position: relative
+        left: 10px
+    & .sortButton[value="1"]:after
+      top: 3px
+      border-left: 2px solid $accentStrong
+      border-top: 2px solid $accentStrong
+      transform: rotate(45deg)
+  td
+    line-height: 22px
+    padding: 16px 0
+    border-bottom: 1px solid $neutralWeak
+    letter-spacing: 0.16px
+    &.price
+      text-align: right
+      color: $baseStrongLight
+      &:after
+        content: ' ₽'
+    &.parametr
+      text-align: right
+      color: $baseStrongLight
+      &:after
+        content: ' mm'
+  tbody tr:last-of-type td
+    border: none
+figure
+  margin: 0
 .button
   display: inline-flex
   justify-content: center
@@ -117,10 +172,12 @@ h1, h2, h3, p, ul
   transition: all 0.3s ease
   font-size: 14px
   line-height: 22px
-  &:hover
+  &:hover, &:focus
     background: $accentStrongLight
+    color: $baseWeak
   &:active
     background: $accentStrongDark
+    color: $baseWeak
   &:disabled
     background: $accentWeakLight
     color: $accentWeak
@@ -134,6 +191,7 @@ h1, h2, h3, p, ul
   border-radius: 8px
   letter-spacing: 0.16px
   transition: all 0.3s ease
+  cursor: pointer
   svg
     width: 16px
     height: 16px
@@ -152,16 +210,38 @@ h1, h2, h3, p, ul
   padding: 9px
   width: 100%
   letter-spacing: 0.16px
-  color: $baseStrong
   transition: all 0.3s ease
+  color: $baseStrong
   background-color: $baseWeak
   border-radius: 8px
   cursor: pointer
+  font-size: 14px
+  line-height: 22px
   &:hover
     color: $accentStrong
     background-color: $neutralWeak
   &:active
+    color: $accentStrong
     background-color: $baseWeak
+.button-bg
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: 9px
+  width: 100%
+  letter-spacing: 0.16px
+  color: $neutralStrongDark
+  border-radius: 8px
+  background-color: $neutralWeakLight
+  font-size: 14px
+  line-height: 22px
+  transition: all 0.3s ease
+  cursor: pointer
+  &:hover
+    background-color: $neutralWeak
+    color: $accentStrong
+  &:active
+    background-color: $neutralWeakLight
     color: $accentStrong
 
 h1
@@ -169,6 +249,9 @@ h1
 
 h2
   font: 600 40px/1.1 $rf
+
+.block
+  margin-bottom: 120px
 
 .img
   display: flex
@@ -242,3 +325,31 @@ a
   border-bottom: 1px solid $neutralWeak
   color: $baseStrongLight
   margin-bottom: 64px
+.not-found
+  background: $neutralWeakLight url("../img/not-found.png") no-repeat center bottom/cover
+  padding-top: 80px
+  min-height: 100vh
+.input-row
+  position: relative
+  &.hint .hint-text
+    display: block
+  &.error
+    input, textarea
+      border-color: $criticalStrong
+      background-color: $criticalWeak
+      &::placeholder
+        color: $neutralWeakDark
+      &:active, &:focus
+        background-color: $baseWeak
+    .hint-text
+      display: block
+      color: $criticalStrong
+  .hint-text
+    display: none
+    font-size: 14px
+    line-height: 22px
+    letter-spacing: 0.16px
+    position: absolute
+    left: 0
+    top: calc(100% + 4px)
+    color: $baseStrongLight

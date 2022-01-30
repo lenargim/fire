@@ -40,6 +40,7 @@
     min-height: 302px
     position: relative
     transition: background-color 0.3s ease
+    counter-increment: item
     &-title
       font: $font24Bold
       transition: background-color 0.3s ease
@@ -61,7 +62,7 @@
         height: 16px
         stroke: $accentStrong
         transition: stoke 0.3s ease
-    span
+    &:after
       color: $neutralStrongLight
       font: $font12
       position: absolute
@@ -69,6 +70,7 @@
       bottom: 40px
       letter-spacing: 0.24px
       transition: color 0.3s ease
+      content: counter(item, decimal-leading-zero)
     &:hover
       background-color: $accentStrongDarkest
       .services__item
@@ -78,7 +80,7 @@
           background-color: $accentStrong
           svg
             stroke: $baseWeak
-      span
+      &:after
         color: $baseWeak
   &__all
     margin-top: 32px

@@ -10,6 +10,14 @@
     border-radius: 8px
     padding: 40px
     transition: background-color 0.3s ease
+    counter-increment: item
+    &::after
+      content: counter(item, decimal-leading-zero)
+      letter-spacing: 0.24px
+      font-size: 12px
+      line-height: 20px
+      color: $baseStrongLight
+      transition: all 0.3s ease
     &:hover
       background: $accentStrongDarkest
       .portfolio
@@ -17,9 +25,9 @@
           color: $baseWeak
         &__desc
           color: $baseWeak
-        &__counter
-          color: $baseWeak
-          border-color: $overlayWeak
+      &:after
+        color: $baseWeak
+        border-color: $overlayWeak
   &__box
     display: grid
     grid-template-columns: repeat(2, 1fr)
@@ -42,6 +50,8 @@
   &__img
     border-radius: 12px
     width: 100%
+    height: 240px
+    object-fit: cover
   &__counter
     border-top: 1px solid $neutralWeak
     padding-top: 13px

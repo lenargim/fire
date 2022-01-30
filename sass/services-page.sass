@@ -101,54 +101,6 @@
     &__title
       font: $font24Bold
       padding-bottom: 1em
-    table
-      width: 100%
-      font-size: 14px
-      border-collapse: collapse
-      th
-        text-align: left
-        padding: 16px 0
-        border-bottom: 2px solid $accentStrong
-        gap: 5px
-        &:last-of-type
-          text-align: right
-          padding-right: 10px
-        .sortButton
-          letter-spacing: 0.16px
-          cursor: pointer
-          color: $baseStrong
-          font-size: 14px
-          line-height: 18px
-          background-color: transparent
-          font-weight: 600
-          padding: 0
-          &:after
-            content: ''
-            border-left: 2px solid $neutralWeak
-            border-top: 2px solid $neutralWeak
-            width: 7px
-            height: 7px
-            display: inline-block
-            border-radius: 1px
-            transform: rotate(-135deg)
-            position: relative
-            left: 10px
-        & .sortButton[value="1"]:after
-          border-left: 2px solid $accentStrong
-          border-top: 2px solid $accentStrong
-          transform: rotate(45deg)
-      td
-        line-height: 22px
-        padding: 16px 0
-        border-bottom: 1px solid $neutralWeak
-        letter-spacing: 0.16px
-        &.price
-          text-align: right
-          color: $baseStrongLight
-          &:after
-            content: ' ₽'
-      tbody tr:last-of-type td
-        border: none
 .service
   padding-top: 120px
   &__title

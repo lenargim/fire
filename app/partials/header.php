@@ -13,13 +13,13 @@
         <div class="header__bottom">
           <nav class="header__nav">
             <li><a href="services.php" class="header__link">Услуги</a></li>
-            <li><a href="#" class="header__link">Выполненные проекты</a></li>
+            <li><a href="cases.php" class="header__link">Выполненные проекты</a></li>
             <li><a href="#" class="header__link">СРО и лицензии</a></li>
-            <li><a href="#" class="header__link">Информация</a></li>
-            <li><a href="#" class="header__link">Контакты</a></li>
+            <li><a href="info.php" class="header__link">Информация</a></li>
+            <li><a href="contacts.php" class="header__link">Контакты</a></li>
             <li><a href="#" class="header__link">О компании</a></li>
           </nav>
-          <div class="header__callback button">Отправить заявку</div>
+          <div class="header__callback button open-modal-checkout">Отправить заявку</div>
         </div>
       </div>
     </div>
