@@ -1,6 +1,6 @@
 # fire
 Сборка https://github.com/agragregra/start_html/tree/master/_optimized_gulp_sass
-Имя домена fire.loc
+Имя домена(vhost) fire.loc
 Папка домена fire/app
 
 npm i - модули
