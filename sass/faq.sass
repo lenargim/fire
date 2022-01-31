@@ -1,7 +1,5 @@
 .faq
   padding-bottom: 120px
-  h2
-    padding-bottom: 60px
   &__wrap
     background-color: $neutralWeakLight
     border-radius: 12px
@@ -41,6 +39,8 @@
   background-color: $baseWeak
   padding: 64px
   border-radius: 12px
+  @include between(1280, 1439)
+    padding: 48px
   &__title
     display: grid
     grid-template-columns: repeat(2, 1fr)

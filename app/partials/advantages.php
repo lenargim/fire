@@ -1,4 +1,4 @@
-<section class="advantages">
+<section class="advantages block">
   <div class="container">
     <div class="before">Почему мы</div>
     <h2>Преимущества<br>работы с нами</h2>

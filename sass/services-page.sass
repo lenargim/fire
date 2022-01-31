@@ -5,13 +5,20 @@
     grid-template-columns: 1fr 1fr
     padding-bottom: 80px
     border-bottom: 1px solid $neutralWeak
+    margin-bottom: 80px
+    @include between(1280, 1439)
+      padding-bottom: 60px
+      margin-bottom: 60px
 
     &:last-of-type
       border: none
       padding-bottom: 0
+      margin-bottom: 0
 
   &__title
     font: 600 40px/44px $rf
+    @include between(1280, 1439)
+      font-size: 36px
 
   &__content
     svg
@@ -102,7 +109,6 @@
       font: $font24Bold
       padding-bottom: 1em
 .service
-  padding-top: 120px
   &__title
     display: grid
     grid-template-columns: 1fr 1fr
@@ -136,7 +142,6 @@
         color: $baseStrong
         border-color: $overlayStrong
   &__ask
-    margin: 120px 0
     padding: 64px
     border-radius: 12px
     background-color: $neutralWeakLight

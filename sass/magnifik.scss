@@ -313,7 +313,10 @@ button.mfp-close {
       line-height: 0;
       box-sizing: border-box;
       margin: 0 auto;
-      border-radius: 12px
+      border-radius: 12px;
+      @include between(1280, 1439) {
+        max-width: 50vw;
+      }
     }
   }
   .mfp-bottom-bar {

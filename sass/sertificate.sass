@@ -14,12 +14,15 @@
       position: absolute
       right: 57px
       bottom: -40px
+      @include between(1280, 1439)
+        width: 66%
   h2
     padding-bottom: 32px
   &__text
     color: $baseStrongLight
     font: $font16
     padding-bottom: 60px
+    max-width: 387px
   &__link
     margin-bottom: 24px
   &__box

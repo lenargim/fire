@@ -124,7 +124,7 @@ include('partials/header.php'); ?>
         </div>
       </div>
     </div>
-    <section class="portfolio">
+    <section class="portfolio block">
       <div class="container">
         <div class="before">Наше портфолио</div>
         <h2>Другие проекты</h2>
@@ -178,7 +178,7 @@ include('partials/header.php'); ?>
             </div>
           </div>
         </div>
-        <a href="#" class="portfolio__all button-gray">
+        <a href="cases.php" class="portfolio__all button-gray">
           <span>Все проекты</span>
           <svg>
             <use xlink:href="img/common-sprite.svg#arrow-right"></use>

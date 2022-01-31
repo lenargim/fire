@@ -19,6 +19,8 @@
     border-radius: 12px
     padding: 32px
     color: $baseWeak
+    @include between(1280, 1439)
+      padding: 24px
     &-slide
       display: block
       width: 52px
@@ -33,6 +35,8 @@
       background-color: $baseWeak
       grid-column: 1/-1
       padding: 64px
+      @include between(1280, 1439)
+        padding: 48px
       .experience__box
         &-slide
           border: 1px solid #DDE1E7
@@ -43,6 +47,8 @@
           color: $accentStrongDark
           white-space: nowrap
           border-bottom: 1px solid$neutralWeak
+          @include between(1280, 1439)
+            font: 600 80px/1.1 $rf
         &-unit
           font-size: 24px
           line-height: 140px
@@ -60,6 +66,8 @@
           line-height: 1
           padding-bottom: 16px
           border-bottom: 1px solid $accentWeakDark
+          @include between(1280, 1439)
+            font-size: 36px
         &-desc
           padding-top: 16px
     &:nth-of-type(2)

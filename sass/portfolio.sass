@@ -1,5 +1,4 @@
 .portfolio
-  padding: 120px 0
   h2
     padding-bottom: 60px
   &__slider
@@ -11,6 +10,8 @@
     padding: 40px
     transition: background-color 0.3s ease
     counter-increment: item
+    @include between(1280, 1439)
+      padding: 30px
     &::after
       content: counter(item, decimal-leading-zero)
       letter-spacing: 0.24px
@@ -33,6 +34,9 @@
     grid-template-columns: repeat(2, 1fr)
     grid-gap: 40px
     margin-bottom: 40px
+    @include between(1280, 1439)
+      grid-gap: 30px
+      margin-bottom: 30px
   &__text
     position: relative
   &__title

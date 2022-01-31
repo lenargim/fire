@@ -6,7 +6,7 @@ include('partials/header.php'); ?>
         <div class="banner__main">
           <div class="banner__before">Наши компетенции</div>
           <h1 class="banner__title">Проектирование,<br>монтаж и обслуживание<br>противопожарных<br>систем</h1>
-          <div class="banner__button button">Ознакомиться с услугами</div>
+          <a href="services.php" class="banner__button button">Ознакомиться с услугами</a>
         </div>
         <div class="banner__aside">
           <div class="banner__box">
@@ -578,7 +578,7 @@ include('partials/header.php'); ?>
             </div>
           </div>
         </div>
-        <a href="#" class="portfolio__all button-gray">
+        <a href="cases.php" class="portfolio__all button-gray">
           <span>Все проекты</span>
           <svg>
             <use xlink:href="img/common-sprite.svg#arrow-right"></use>
@@ -745,7 +745,7 @@ include('partials/header.php'); ?>
               </div>
               <div class="input-row">
                 <label for="ask-textarea">Ваш вопрос</label>
-                <textarea name="" id="ask-textarea" rows="10"
+                <textarea name="" id="ask-textarea" rows="9"
                           placeholder="Например — какие документы для осуществления вашей деятельноси у вас имeются?"></textarea>
                 <span class="hint-text">Текст подсказки</span>
               </div>

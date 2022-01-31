@@ -34,11 +34,15 @@ main
   position: relative
 main
   margin-top: 80px
+  @include between(1280, 1439)
+    margin-top: 60px
 .container
   width: 100%
   padding: 0 10px
   margin: 0 auto
   max-width: 1300px
+  @include max(1279)
+    padding: 0 16px
 
 input[type=search]::-ms-clear
   display: none
@@ -181,6 +185,12 @@ figure
   &:disabled
     background: $accentWeakLight
     color: $accentWeak
+  @include max(1279)
+    width: 100%
+    max-width: 400px
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
 .button-gray
   display: inline-flex
   align-items: center
@@ -192,6 +202,12 @@ figure
   letter-spacing: 0.16px
   transition: all 0.3s ease
   cursor: pointer
+  @include max(1279)
+    width: 100%
+    max-width: 400px
+    position: relative
+    left: 50%
+    transform: translateX(-50%)
   svg
     width: 16px
     height: 16px
@@ -246,9 +262,18 @@ figure
 
 h1
   font: 600 60px/64px "RF Dewi", sans-serif
+  @include between(1280, 1439)
+    font: 600 48px/52px $rf
+  @include max(1279)
+    font: 600 28px/32px $rf
 
 h2
   font: 600 40px/1.1 $rf
+  @include between(1280, 1439)
+    font-size: 36px
+  @include max(1279)
+    font-size: 20px
+    line-height: 24px
 
 .block
   margin-bottom: 120px
@@ -306,10 +331,10 @@ a
   &:disabled
     color: $neutralStrongLight
 .desktop
-  @include max(1023)
+  @include max(1279)
     display: none !important
 .mobile
-  @include min(1024)
+  @include min(1280)
     display: none !important
 .nowrap
   white-space: nowrap
@@ -325,6 +350,11 @@ a
   border-bottom: 1px solid $neutralWeak
   color: $baseStrongLight
   margin-bottom: 64px
+  letter-spacing: 0.24px
+  @include between(1280, 1439)
+    margin-bottom: 48px
+  @include max(1279)
+    margin-bottom: 24px
 .not-found
   background: $neutralWeakLight url("../img/not-found.png") no-repeat center bottom/cover
   padding-top: 80px

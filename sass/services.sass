@@ -1,5 +1,7 @@
 .services
   padding-bottom: 120px
+  @include max(1279)
+    padding-bottom: 40px
   &__content
     position: relative
   &__title
@@ -7,15 +9,45 @@
     grid-template-columns: repeat(2, 1fr)
     grid-gap: 30px
     margin-bottom: 92px
+    @include max(1279)
+      grid-template-columns: 1fr
+      grid-gap: 16px
+      margin-bottom: 20px
     span
       font: $font16
       color: $baseStrongLight
+      @include max(1279)
+        font-size: 14px
   &__tabs
     display: flex
     align-items: center
     justify-content: space-between
-    border-bottom: 1px solid $neutralWeak
     margin-bottom: 32px
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 0
+      height: 1px
+      width: 100%
+      background-color: $neutralWeak
+    @include max(1279)
+      position: relative
+      left: -16px
+      right: -16px
+      padding: 0 16px
+      width: 100vw
+      overflow-x: auto
+      -ms-overflow-style: none
+      scrollbar-width: none
+      gap: 24px
+      &::-webkit-scrollbar
+        display: none
+      &:after
+        left: 16px
+        right: 16px
     div
       cursor: pointer
       letter-spacing: 0.16px
@@ -41,10 +73,18 @@
     position: relative
     transition: background-color 0.3s ease
     counter-increment: item
+    @include max(1279)
+      padding: 24px
+      min-height: 178px
+      width: 196px
     &-title
       font: $font24Bold
       transition: background-color 0.3s ease
       color: $baseStrong
+      letter-spacing: 0.16px
+      @include max(1279)
+        font-size: 14px
+        line-height: 18px
     &-arrow
       position: absolute
       right: 40px
@@ -57,6 +97,9 @@
       width: 40px
       height: 40px
       transition: background-color 0.3s ease
+      @include max(1279)
+        right: 24px
+        bottom: 24px
       svg
         width: 16px
         height: 16px
@@ -71,6 +114,9 @@
       letter-spacing: 0.24px
       transition: color 0.3s ease
       content: counter(item, decimal-leading-zero)
+      @include max(1279)
+        left: 24px
+        bottom: 24px
     &:hover
       background-color: $accentStrongDarkest
       .services__item
@@ -84,3 +130,6 @@
         color: $baseWeak
   &__all
     margin-top: 32px
+  .navigation
+    @include max(1279)
+      display: none

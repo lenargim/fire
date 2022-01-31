@@ -75,7 +75,7 @@ include('partials/header.php'); ?>
                  class="portfolio__img"></div>
         </a>
       </div>
-      <button class="button-bg cases-page__more">Показать ещё 8</button>
+      <button class="button-bg cases-page__more block">Показать ещё 8</button>
     </div>
     <div class="block">
       <div class="container">

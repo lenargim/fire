@@ -122,7 +122,7 @@ include('partials/header.php'); ?>
         </div>
       </div>
     </section>
-    <section class="advantages-block">
+    <section class="advantages-block block">
       <div class="container">
         <div class="before">Почему мы</div>
         <h2>Преимущества<br>работы с нами</h2>
@@ -202,7 +202,7 @@ include('partials/header.php'); ?>
         </div>
       </div>
     </section>
-    <section class="service">
+    <section class="service block">
       <div class="container">
         <div class="before">Сопровождаем и помогаем на всех этапах</div>
         <div class="service__title">
@@ -238,7 +238,7 @@ include('partials/header.php'); ?>
       </div>
     </section>
     <div class="container">
-      <div class="service__ask">
+      <div class="service__ask block">
         <div class="before">Готовы сотрудничать?</div>
         <div class="ask__title">
           <h2>Оставить заявку<br>на услуги</h2>
