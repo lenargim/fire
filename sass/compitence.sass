@@ -1,18 +1,30 @@
 .compitence
-  padding-bottom: 120px
   &__wrap
     display: grid
     grid-template-columns: 1fr 1fr
     grid-gap: 24px
+    @include max(1279)
+      grid-template-columns: 1fr
   &__desc
     color: $baseStrongLight
     font: $font16
     padding-bottom: 48px
+    @include max(1279)
+      font-size: 14px
+      line-height: 22px
+      letter-spacing: 0.16px
+      padding-bottom: 24px
   &__subtitle
     padding-bottom: 16px
     font: $font16Bold
+    @include max(1279)
+      font-size: 14px
+      line-height: 22px
+      letter-spacing: 0.16px
   ul
     padding-bottom: 48px
+    @include max(1279)
+      padding-bottom: 24px
   &__more
     svg
       transform: rotate(90deg)

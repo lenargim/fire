@@ -1,13 +1,32 @@
 .clients
   padding-bottom: 120px
+  h2
+    padding-bottom: 60px
+    @include max(767)
+      padding-bottom: 20px
+  @include max(1279)
+    padding-bottom: 40px
   &__slider
     margin-bottom: 32px
     position: relative
+    @include max(1279)
+      overflow: hidden
   &__slide
     border-right: 1px solid $neutralWeak
     padding: 24px 32px
+    @include max(1279)
+      display: flex
+      align-items: center
+      justify-content: center
+      border-bottom: 1px solid $neutralWeak
     img
       transition: opacity 0.3s ease
       opacity: 0.12
+      @include max(1279)
+        opacity: 1
+        width: 100%
     &:hover img
       opacity: 1
+  .swiper-wrapper
+    @include max(1279)
+      margin: -3px 2px

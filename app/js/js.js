@@ -16,11 +16,22 @@ $(document).ready(function () {
   let portfolio = new Swiper('.portfolio__slider', {
     speed: 400,
     slidesPerView: 2,
-    spaceBetween: 24,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      320: {
+        spaceBetween: 16,
+        slidesPerView: 'auto',
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1279: {
+        spaceBetween: 24,
+      }
+    }
   });
 
   let clients = new Swiper('.clients__slider', {
@@ -31,6 +42,25 @@ $(document).ready(function () {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        grid: {
+          rows: 3,
+          fill: 'row',
+        },
+      },
+      768: {
+        slidesPerView: 3,
+        grid: {
+          rows: 3,
+          fill: 'row',
+        },
+      },
+      1280: {
+        init: true,
+      }
+    }
   });
 
   $('.faq__block').on('click', function () {
@@ -126,6 +156,26 @@ $(document).ready(function () {
     $(this).toggleClass('active');
     $('.header').toggleClass('fixed');
     $('.mobile-menu').slideToggle()
+  });
+
+  $('.advantages__item').on('click', function () {
+    if (window.innerWidth < 1280) {
+      let svg = $(this).find('.advantages__item-svg');
+      let text = $(this).find('.advantages__item-desc').html();
+      let svgClass = svg.attr('class').replace('advantages__item-svg', '');
+      $('.advantages__mobile-svg').html(svg.html());
+      $('.advantages__mobile-svg').addClass(svgClass);
+      $('.advantages__mobile-desc').html(text);
+      $('.advantages__open').addClass('active');
+    }
+  });
+
+  $('.advantages__open').on('click', function (e) {
+    let div = $(this);
+    if ( div.has(e.target).length === 0 ) {
+      div.removeClass('active');
+      $('.advantages__mobile-svg').attr('class', 'advantages__mobile-svg');
+    }
   })
 });
 

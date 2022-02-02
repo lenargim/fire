@@ -3,6 +3,18 @@
   padding: 80px 0 64px
   @include between(1280, 1439)
     padding: 60px 0 48px
+  @include max(1279)
+    padding: 12px 0 24px
+  @include max(767)
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 24px
+      height: 1px
+      background-color: $neutralWeak
   &_transparent
     background: transparent
   &__wrap
@@ -11,6 +23,18 @@
     justify-content: flex-start
     padding-bottom: 12px
     border-bottom: 1px solid $neutralWeak
+    @include max(767)
+      border: none
+      overflow-x: auto
+      width: 100vw
+      position: relative
+      left: -16px
+      right: -16px
+      padding: 0 16px 12px
+      -ms-overflow-style: none
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        display: none
     a
       display: inline-block
       letter-spacing: 0.24px
@@ -28,8 +52,10 @@
 .title-page
   background: $neutralWeakLight
   padding-bottom: 80px
-  @include between(1280, 1439)
+  @include between(768, 1439)
     padding-bottom: 60px
+  @include max(767)
+    padding-bottom: 24px
   &_transparent
     background-color: transparent
   &__wrap
@@ -37,7 +63,16 @@
     gap: 24px
     align-items: flex-start
     justify-content: space-between
+    @include max(767)
+      flex-direction: column
+      gap: 16px
+      justify-content: flex-start
     span
       font: $font16
       color: $baseStrongLight
       width: calc(50% - 12px)
+      @include max(767)
+        width: 100%
+        font-size: 14px
+        line-height: 22px
+        letter-spacing: 0.16px

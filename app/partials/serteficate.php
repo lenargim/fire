@@ -1,6 +1,6 @@
 <section class="sertificate">
   <div class="container">
-    <div class="sertificate__wrap">
+    <div class="sertificate__wrap sertificate__wrap_reverse">
       <div class="sertificate__leftside">
         <img src="img/sertificate.png" alt="sertificate">
         <div class="sertificate__box">

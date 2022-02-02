@@ -24,7 +24,7 @@ include('partials/header.php'); ?>
     </div>
     <div class="contacts__map block">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2181.9934556419244!2d60.587796815537104!3d56.84605611461133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43c16e670faf89c1%3A0x3ef888399803d6b8!2z0YPQuy4g0JHQvtGA0LjRgdCwINCV0LvRjNGG0LjQvdCwLCAx0LAsINCV0LrQsNGC0LXRgNC40L3QsdGD0YDQsywg0KHQstC10YDQtNC70L7QstGB0LrQsNGPINC-0LHQuy4sIDYyMDAxNA!5e0!3m2!1sru!2sru!4v1643493306352!5m2!1sru!2sru"
-              width="100%" height="560" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="contacts__callback block">
       <div class="before">Готовы сотрудничать?</div>

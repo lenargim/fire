@@ -3,14 +3,24 @@
     display: grid
     grid-template-columns: 2fr 1fr 1fr
     grid-gap: 24px
+    @include max(1279)
+      grid-template-columns: 1fr
   &__phone
+    white-space: nowrap
     color: $accentStrongDark
     font: 600 68px/72px $rf
     @include between(1280, 1439)
       font: 600 52px/58px $rf
+    @include max(767)
+      font: $font24Bold
+      color: $baseStrong
   &__address
     color: $baseStrongLight
     font: $font16
+    @include max(767)
+      font-size: 14px
+      line-height: 22px
+      letter-spacing: 0.16px
   &__mail
     color: $accentStrong
     letter-spacing: 0.16px
@@ -19,7 +29,19 @@
     line-height: 1
     border-radius: 12px
     overflow: hidden
+    height: 560px
+    @include max(767)
+      border-radius: 0
+      position: relative
+      left: -16px
+      right: -16px
+      width: 100vw
+      height: 250px
   &__callback
     background-color: $neutralWeakLight
     border-radius: 12px
     padding: 64px
+    @include between(768, 1279)
+      padding: 48px
+    @include max(767)
+      padding: 20px

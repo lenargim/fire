@@ -77,4 +77,10 @@
       </div>
     </div>
   </div>
+  <div class="advantages__open hidden">
+    <div class="advantages__mobile" id="advantages-mobile">
+      <svg class="advantages__mobile-svg stroke"></svg>
+      <div class="advantages__mobile-desc"></div>
+    </div>
+  </div>
 </section>

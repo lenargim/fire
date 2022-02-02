@@ -2,6 +2,8 @@
   background-color: $neutralStrongDark
   padding-top: 40px
   color: $baseWeak
+  @include max(767)
+    padding-top: 20px
   .to-top
     width: 100%
     letter-spacing: 0.16px
@@ -14,6 +16,8 @@
     justify-content: center
     cursor: pointer
     margin-bottom: 80px
+    @include max(767)
+      margin-bottom: 20px
     svg
       width: 16px
       height: 16px
@@ -27,11 +31,22 @@
     grid-template-rows: auto
     grid-gap: 60px 24px
     padding-bottom: 120px
+    @include between(768, 1279)
+      grid-template-columns: repeat(2, 1fr)
+      padding-bottom: 60px
+    @include max(767)
+      grid-template-columns: 1fr
+      grid-gap: 40px
+      padding-bottom: 20px
   &__box
     font-size: 14px
     line-height: 18px
     letter-spacing: 0.16px
     padding-right: 60px
+    @include between(768, 1279)
+      padding-right: 20px
+    @include max(767)
+      padding-right: 0
   &__subtitle
     font-weight: 600
     a
@@ -40,6 +55,8 @@
       display: block
   &__nav
     padding-top: 24px
+    @include max(767)
+      padding-top: 16px
     li
       padding-bottom: 12px
       a
@@ -52,6 +69,10 @@
     display: flex
     align-items: flex-start
     justify-content: space-between
+    @include max(767)
+      flex-direction: column
+      justify-content: stretch
+      padding-bottom: 20px
     a
       letter-spacing: 0.16px
       color: $baseWeak
@@ -65,12 +86,15 @@
     font: 600 32px/36px $rf
     padding-bottom: 20px
   &__address
-    max-width: 278px
+    @include min(768)
+      max-width: 278px
   &__socials
     display: flex
     align-items: center
     justify-content: flex-end
     gap: 8px
+    @include max(767)
+      margin-top: 24px
   .social
     width: 56px
     height: 40px
@@ -87,7 +111,14 @@
   &__bottom
     border-top: 1px solid $neutralStrong
     padding: 32px 0
+    @include max(767)
+      padding: 20px 0
     &-text
       display: flex
       align-items: center
       justify-content: space-between
+      @include max(767)
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+        gap: 8px

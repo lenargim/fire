@@ -1,26 +1,41 @@
 .experience
-  margin-bottom: -350px
-  z-index: 1
   &__wrap
     display: grid
+    position: relative
     grid-template-columns: 1fr 1fr
     grid-gap: 24px
     padding: 40px
     border-radius: 12px
-    background: linear-gradient(0deg, #F4F5F6, #F4F5F6)
+    background: #F4F5F6 url("../img/help.png") center bottom no-repeat
+    @include max(1279)
+      padding: 20px 20px 84px
+      grid-template-columns: 1fr
+    @include max(767)
+      grid-gap: 12px
     h2
       margin-bottom: 60px
+      @include max(1279)
+        margin-bottom: 0
+  &__link
+    @include max(1279)
+      position: absolute
+      bottom: 20px
+    @include max(767)
+      left: 20px
+      right: 20px
+      width: auto
+      transform: none
   &__rightside
     display: grid
     grid-template-columns: 1fr 1fr
     grid-template-rows: auto
     grid-gap: 24px
+    @include max(767)
+      grid-template-columns: 1fr
+      grid-gap: 12px
   &__box
     border-radius: 12px
-    padding: 32px
     color: $baseWeak
-    @include between(1280, 1439)
-      padding: 24px
     &-slide
       display: block
       width: 52px
@@ -37,6 +52,8 @@
       padding: 64px
       @include between(1280, 1439)
         padding: 48px
+      @include max(767)
+        padding: 24px
       .experience__box
         &-slide
           border: 1px solid #DDE1E7
@@ -49,18 +66,33 @@
           border-bottom: 1px solid$neutralWeak
           @include between(1280, 1439)
             font: 600 80px/1.1 $rf
+          @include max(767)
+            font: 600 40px/44px $rf
+            padding-bottom: 24px
         &-unit
           font-size: 24px
           line-height: 140px
+          @include max(767)
+            font-size: 40px
+            line-height: 1
         &-desc
           padding-top: 44px
           max-width: 238px
           color: $baseStrongLight
+          @include max(767)
+            padding-top: 24px
+            font-size: 14px
+            line-height: 22px
+            letter-spacing: 0.16px
     &:nth-of-type(2), &:nth-of-type(3)
+      padding: 32px
+      @include max(1279)
       .experience__box
         &-slide
           border: 1px solid $accentWeakDark
           margin-bottom: 65px
+          @include max(767)
+            margin-bottom: 20px
         &-title
           font-size: 44px
           line-height: 1
@@ -70,6 +102,10 @@
             font-size: 36px
         &-desc
           padding-top: 16px
+          @include max(767)
+            font-size: 14px
+            line-height: 22px
+            letter-spacing: 0.16px
     &:nth-of-type(2)
       background-color: $accentStrongDark
     &:nth-of-type(3)

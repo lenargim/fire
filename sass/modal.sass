@@ -7,7 +7,7 @@
   width: 100%
   height: 100%
   background-color: #808080
-  z-index: 10
+  z-index: 13
   display: none
   &.active
     display: block
@@ -19,6 +19,13 @@
   background-color: $baseWeak
   border-radius: 12px
   display: none
+  @include max(1279)
+    border-radius: 0
+    transform: unset
+    left: unset
+    top: unset
+    .ask__title span
+      display: block
   &.active
     display: block
   &__wrap
@@ -26,6 +33,12 @@
     width: 800px
     max-height: 92vh
     overflow-y: auto
+    @include between(1280, 1439)
+      padding: 48px
+    @include max(1279)
+      padding: 18px 20px 20px
+      width: 100vw
+      max-height: 100vh
   &__close
     position: absolute
     cursor: pointer
@@ -39,6 +52,14 @@
     display: flex
     align-items: center
     justify-content: center
+    @include max(1279)
+      left: unset
+      bottom: unset
+      right: 15px
+      top: 16px
+      background-color: transparent
+      width: 24px
+      height: 24px
     &::before, &::after
       content: ''
       border-radius: 1px
@@ -48,6 +69,8 @@
       z-index: 11
       background-color: $accentStrong
       transform-origin: center center
+      @include max(1279)
+        background-color: $baseStrong
     &:before
       transform: rotate(45deg) translateY(-1px)
     &:after

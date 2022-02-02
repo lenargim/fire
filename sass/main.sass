@@ -36,6 +36,10 @@ main
   margin-top: 80px
   @include between(1280, 1439)
     margin-top: 60px
+  @include between(768, 1279)
+    margin-top: 40px
+  @include max(767)
+    margin-top: 24px
 .container
   width: 100%
   padding: 0 10px
@@ -68,6 +72,11 @@ ul li
   font: $font16
   padding: 0 0 0.5em 0.5em
   list-style-position: inside
+  @include max(767)
+    font-size: 14px
+    line-height: 22px
+    padding-bottom: 8px
+    letter-spacing: 0.16px
 ol
   padding: 0
   li
@@ -80,16 +89,19 @@ ol
     gap: 20px
     letter-spacing: 0.16px
     position: relative
+    @include max(767)
+      gap: 16px
+      align-items: flex-start
 
     &:last-of-type
       border: none
 
     &::before
       font-size: 8px
-      line-height: 12px
+      line-height: 1
       font-weight: 600
       letter-spacing: 0.24px
-      width: 24px
+      min-width: 24px
       height: 24px
       display: flex
       align-items: center
@@ -119,6 +131,7 @@ table
       text-align: right
       padding-right: 10px
     .sortButton
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
       letter-spacing: 0.16px
       cursor: pointer
       color: $baseStrong
@@ -127,6 +140,11 @@ table
       background-color: transparent
       font-weight: 600
       padding: 0
+      display: inline-flex
+      align-items: center
+      @include max(767)
+        font-size: 12px
+        line-height: 20px
       &:after
         content: ''
         border-left: 2px solid $neutralWeak
@@ -269,14 +287,18 @@ h1
 
 h2
   font: 600 40px/1.1 $rf
-  @include between(1280, 1439)
+  @include between(768, 1439)
     font-size: 36px
-  @include max(1279)
+  @include max(767)
     font-size: 20px
     line-height: 24px
 
 .block
   margin-bottom: 120px
+  @include between(768, 1279)
+    margin-bottom: 60px
+  @include max(767)
+    margin-bottom: 40px
 
 .img
   display: flex
@@ -303,6 +325,10 @@ input, textarea
     color: $neutralWeakDark
   &:focus
     border-color: $accentStrongLight
+  @include max(767)
+    font-size: 14px
+    line-height: 22px
+    letter-spacing: 0.16px
 label
   display: inline-block
   letter-spacing: 0.16px
@@ -312,6 +338,9 @@ label
     color: $criticalStrong
     letter-spacing: 0.16px
     padding-left: 4px
+  @include max(767)
+    font-size: 14px
+    line-height: 22px
 
 textarea
   resize: none
@@ -359,6 +388,16 @@ a
   background: $neutralWeakLight url("../img/not-found.png") no-repeat center bottom/cover
   padding-top: 80px
   min-height: 100vh
+  @include max(767)
+    padding-top: 24px
+  &__button
+    @include max(1279)
+      position: absolute
+      left: 50%
+      transform: translateX(-50%)
+      bottom: 15vh
+    @include max(767)
+      width: calc(100vw - 32px)
 .input-row
   position: relative
   &.hint .hint-text
@@ -383,3 +422,8 @@ a
     left: 0
     top: calc(100% + 4px)
     color: $baseStrongLight
+.main .experience
+  margin-bottom: -350px
+  @include max(1279)
+    margin-bottom: 40px
+  z-index: 1

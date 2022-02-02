@@ -1,4 +1,4 @@
-<section class="compitence">
+<section class="compitence block">
   <div class="container">
     <div class="before">Наши компетенции</div>
     <div class="compitence__wrap">

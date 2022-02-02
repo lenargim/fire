@@ -487,42 +487,7 @@ include('partials/header.php'); ?>
         </div>
       </div>
     </section>
-    <section class="experience">
-      <div class="container">
-        <div class="experience__wrap">
-          <div class="experience__leftside">
-            <div class="before">Наш опыт</div>
-            <h2>Результаты<br>деятельности<br>в цифрах</h2>
-            <a href="#" class="button-gray">
-              <span>О компании</span>
-              <svg>
-                <use xlink:href="img/common-sprite.svg#arrow-right"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="experience__rightside">
-            <div class="experience__box">
-              <div class="experience__box-slide">1/3</div>
-              <div class="experience__box-title">
-                <span>10 682</span>
-                <span class="experience__box-unit"> m2</span></div>
-              <div class="experience__box-desc">Общая площадь объектов защищённых от пожаров и чрезвычайных ситуаций
-              </div>
-            </div>
-            <div class="experience__box">
-              <div class="experience__box-slide">2/3</div>
-              <div class="experience__box-title">5 000+</div>
-              <div class="experience__box-desc">Выполненных проектов</div>
-            </div>
-            <div class="experience__box">
-              <div class="experience__box-slide">3/3</div>
-              <div class="experience__box-title">5+</div>
-              <div class="experience__box-desc">Лет на рынке</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <?php include('partials/experience.php'); ?>
     <?php include('partials/advantages.php'); ?>
     <section class="portfolio">
       <div class="container">
@@ -589,6 +554,8 @@ include('partials/header.php'); ?>
     <?php include('partials/serteficate.php'); ?>
     <section class="clients">
       <div class="container">
+        <div class="before">С нами сотрудничают</div>
+        <h2>Наши клиенты</h2>
         <div class="clients__slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide clients__slide"><img src="img/rosatom.png" alt="rosatom"></div>
@@ -621,7 +588,7 @@ include('partials/header.php'); ?>
         </a>
       </div>
     </section>
-    <section class="faq">
+    <section class="faq block">
       <div class="container">
         <div class="faq__wrap">
           <div class="before">Остались вопросы?</div>

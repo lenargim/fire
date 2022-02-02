@@ -18,7 +18,6 @@ include('partials/header.php'); ?>
   </div>
   <main class="service-page">
     <div class="container">
-      <!--      --><?php //include('partials/compitence.php');?>
       <div class="service-page__box">
         <div class="service-page__callback">
           <div class="service-page__callback-title">Стоимость услуги</div>
@@ -199,6 +198,12 @@ include('partials/header.php'); ?>
             <div class="advantages__item-desc">Производим работы «день<br>в день», подстраиваемся<br>под ваши сроки
             </div>
           </div>
+        </div>
+      </div>
+      <div class="advantages__open hidden">
+        <div class="advantages__mobile" id="advantages-mobile">
+          <svg class="advantages__mobile-svg stroke"></svg>
+          <div class="advantages__mobile-desc"></div>
         </div>
       </div>
     </section>

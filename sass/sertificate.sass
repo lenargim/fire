@@ -1,21 +1,41 @@
 .sertificate
   padding: 120px 0
+  @include max(1279)
+    padding: 40px 0
   &__wrap
     background-color: $neutralWeakLight
     border-radius: 12px
-    display: grid
-    grid-template-columns: 1fr 1fr
-    grid-gap: 24px
     padding: 40px
     overflow: hidden
+    @include min(1280)
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 24px
+    @include max(1279)
+      display: flex
+      justify-content: flex-start
+      align-items: flex-start
+      padding: 20px
+      flex-direction: column
+    &_reverse
+      @include max(1279)
+        flex-direction: column-reverse
   &__leftside, &__rightside
     position: relative
+    @include max(1279)
+      width: 100%
     img
       position: absolute
       right: 57px
       bottom: -40px
       @include between(1280, 1439)
         width: 66%
+      @include max(1279)
+        display: block
+        position: unset
+        margin: 0 auto -20px
+      @include max(767)
+        width: 190px
   h2
     padding-bottom: 32px
   &__text
@@ -23,6 +43,8 @@
     font: $font16
     padding-bottom: 60px
     max-width: 387px
+    @include max(767)
+      padding-bottom: 24px
   &__link
     margin-bottom: 24px
   &__box
@@ -33,6 +55,10 @@
     background-color: $accentStrong
     max-width: 216px
     border-radius: 12px
+    @include max(767)
+      position: relative
+      z-index: 1
+      max-width: unset
     &-digit
       color: $baseWeak
       font-size: 44px
@@ -43,3 +69,7 @@
       padding-top: 16px
       font: $font16
       color: $baseWeak
+      @include max(767)
+        font-size: 14px
+        line-height: 22px
+        letter-spacing: 0.16px

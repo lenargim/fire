@@ -2,15 +2,35 @@
   background: $accentStrongDarkest
   color: $baseWeak
   padding: 440px 0 60px
+  @include max(1279)
+    padding: 40px 0
   .before
     color: $neutralWeak
     border-color: rgba(255, 255, 255, 0.2)
   h2
     padding-bottom: 60px
+    @include max(767)
+      padding-bottom: 24px
   &__wrap
     display: grid
     grid-template-columns: repeat(4, 1fr)
     grid-gap: 24px
+    @include between(768, 1279)
+      grid-template-columns: repeat(3, 1fr)
+      grid-gap: 16px
+    @include max(767)
+      grid-template-columns: repeat(8, 1fr)
+      overflow-x: auto
+      width: 100vw
+      position: relative
+      left: -16px
+      right: -16px
+      padding: 0 16px
+      grid-gap: 12px
+      -ms-overflow-style: none
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        display: none
   &__item
     background: $baseWeak
     border-radius: 8px
@@ -19,6 +39,10 @@
     position: relative
     overflow: hidden
     transition: all 0.3s ease
+    @include max(767)
+      width: 182px
+      height: 211px
+      padding: 20px
     &-svg
       background: $accentWeakLight
       display: flex
@@ -30,6 +54,11 @@
       border-radius: 12px
       margin-bottom: 28px
       transition: all 0.3s ease
+      @include max(767)
+        width: 44px
+        height: 44px
+        padding: 12px
+        margin-bottom: 20px
       &.stroke
         stroke: $accentStrong
         fill: transparent
@@ -41,6 +70,11 @@
       line-height: 24px
       font-weight: 600
       padding-bottom: 70px
+      @include max(767)
+        font-size: 14px
+        line-height: 18px
+        letter-spacing: 0.16px
+        padding-bottom: 20px
     &-more
       border-top: 1px solid $neutralWeak
       padding-top: 12px
@@ -52,30 +86,81 @@
       left: 38px
       right: 38px
       bottom: 38px
+      @include max(767)
+        bottom: 20px
+        left: 20px
+        right: 20px
     &-desc
       position: absolute
       top: calc(100% + 1em)
       left: 38px
       transition: all 0.3s ease
       font: $font16
-    &:hover
-      background: $accentStrong
-      .advantages__item
-        &-svg
-          background: $accentStrongDark
-          &.stroke
-            stroke: $baseWeak
-          &.fill
-            fill: $baseWeak
-        &-title, &-more
-          display: none
-        &-desc
-          color: $baseWeak
-          top: unset
-          bottom: 38px
+    @include min(1279)
+      &:hover
+        background: $accentStrong
+        .advantages__item
+          &-svg
+            background: $accentStrongDark
+            &.stroke
+              stroke: $baseWeak
+            &.fill
+              fill: $baseWeak
+          &-title, &-more
+            display: none
+          &-desc
+            color: $baseWeak
+            top: unset
+            bottom: 38px
+  &__open.active
+    display: block
+    position: fixed
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-color: $overlayStrongDark
+    z-index: 13
+  &__mobile
+    position: absolute
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: $accentStrong
+    border-radius: 12px 12px 0 0
+    padding: 44px 38px 40px
+    &::after
+      content: ''
+      width: 100px
+      height: 4px
+      background: rgba(0, 0, 0, 0.32)
+      display: block
+      position: absolute
+      top: 20px
+      left: 50%
+      margin-left: -50px
+    &-svg
+      width: 56px
+      height: 56px
+      background-color: $accentStrongDark
+      margin-bottom: 28px
+      padding: 16px
+      border-radius: 16px
+      &.stroke
+        fill: transparent
+        stroke: $baseWeak
+      &.fill
+        stroke: transparent
+        fill: $baseWeak
+    &-desc
+      font: $font16
 .advantages-block
   h2
     padding-bottom: 60px
+    @include between(768, 1279)
+      padding-bottom: 40px
+    @include max(767)
+      padding-bottom: 24px
   .advantages__item
     background-color: $accentWeakLight
     &-svg
