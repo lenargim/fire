@@ -108,24 +108,23 @@
       display: block
   &__text
     width: 50%
+    display: flex
+    justify-content: flex-start
+    flex-direction: column
+    gap: 48px
     @include max(767)
       width: 100%
+      gap: 40px
     ul li
       padding-left: 0
     p
       color: $baseStrongLight
-  &__part
-    padding-bottom: 48px
-    @include max(767)
-      padding-bottom: 40px
-    &-title
+      letter-spacing: 0.16px
+    h2
       font: $font20Bold
       padding-bottom: 24px
       @include max(767)
         padding-bottom: 16px
-    &-subtitle
+    h3
       font: $font16Bold
       padding-bottom: 1em
-    p
-      @include max(767)
-        letter-spacing: 0.16px

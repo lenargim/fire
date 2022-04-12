@@ -147,14 +147,14 @@
     p
       color: $baseStrongLight
       font: $font16
-  &__subtitle
-    font: $font16Bold
-    padding-bottom: 1em
-  &__title
-    font: $font24Bold
-    padding-bottom: 1em
-    @include max(767)
+    h2
+      font: $font24Bold
+      padding-bottom: 1em
+      @include max(767)
+        font: $font16Bold
+    h3
       font: $font16Bold
+      padding-bottom: 1em
   &__img
     border-radius: 12px
     overflow: hidden

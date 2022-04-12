@@ -1,4 +1,6 @@
 .compitence
+  color: $baseStrongLight
+  font: $font16
   &__wrap
     display: grid
     grid-template-columns: 1fr 1fr
@@ -6,8 +8,6 @@
     @include max(1279)
       grid-template-columns: 1fr
   &__desc
-    color: $baseStrongLight
-    font: $font16
     padding-bottom: 48px
     @include max(1279)
       font-size: 14px
@@ -21,10 +21,15 @@
       font-size: 14px
       line-height: 22px
       letter-spacing: 0.16px
-  ul
-    padding-bottom: 48px
-    @include max(1279)
-      padding-bottom: 24px
   &__more
+    margin-top: 48px
+    @include max(1279)
+      margin-top: 24px
     svg
       transform: rotate(90deg)
+    &.open svg
+      transform: rotate(-90deg)
+  &__hidden
+    margin-top: 48px
+    @include max(1279)
+      margin-top: 24px

@@ -176,7 +176,15 @@ $(document).ready(function () {
       div.removeClass('active');
       $('.advantages__mobile-svg').attr('class', 'advantages__mobile-svg');
     }
-  })
+  });
+
+
+  $('.compitence__more').on('click', function () {
+    let span = $(this).find('span');
+    $(this).toggleClass('open');
+    $(this).hasClass('open') ? span.text('Скрыть') : span.text('Читать дальше');
+    $(this).siblings('.compitence__hidden').slideToggle();
+  });
 });
 
 
